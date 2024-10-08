@@ -1,1 +1,53 @@
-<h1>Hello js</h1>
+<%- include('head') -%>
+<style>
+    
+    .project{
+       z-index: 2;
+        min-width: 200px;
+        margin: 2%;
+        min-height:550px;
+        border-radius: 10px;
+        border: 5px solid #aea98a;
+        ;
+        cursor: pointer;
+    }
+    
+    .project:nth-child(3){
+        background: url(https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?q=80&w=1904&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+   
+</style>
+<main class="jsPage" style="height: 91%;width: 100%;" >
+   <div class="project" data-cursor-text="Explore">one</div>
+   <div class="project" data-cursor-text="Explore">two</div>
+   <div class="project" data-cursor-text="TODO">three</div>
+   <div class="project" data-cursor-text="Explore">four</div>
+   <div class="project" data-cursor-text="Explore" data-cursor-icon="arrow-left">five</div>
+    
+    
+
+
+
+
+
+
+
+    
+   
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+<script>
+
+    const cursor = new MouseFollower({
+    container: ".jsPage",
+    speed: 0.3,
+    skewing: 4,
+});
+
+</script>
+<%-include('foot') -%>
