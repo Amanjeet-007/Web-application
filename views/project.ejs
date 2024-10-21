@@ -1,1 +1,41 @@
-<a href="project/javascript">javascript</a>
+<%- include('head') -%>
+    <style>
+        .container {
+            margin-top: 20px;
+            height: min-content;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            margin: 15px 20px;
+            min-height: 300px;
+            min-width: 250px;
+            background-color: white;
+            color: black;
+        }
+        .card img{
+            width: 250px;
+            border: 2px solid black;
+        }
+    </style>
+    <!-- <a href="project/javascript">javascript</a> -->
+    <div class="container">
+        <!-- <div class="card">C++</div> -->
+        <div class="card">
+            <img src="https://qualitapps.com/wp-content/uploads/2023/02/102.png" alt="">
+        </div>
+        <div class="card">
+            <img src="https://files.oaiusercontent.com/file-WM34rucprpO1uNwdHXzP3hvs?se=2024-10-13T05%3A04%3A42Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D495a3ecb-29cc-4630-aa5e-987647210cb8.webp&sig=CydzBcUJrfRooRcjWgPgkyMZG/GiKMKmRXRTHfNy2dg%3D" alt="">
+            </div>
+        <div class="card">Full-Stack</div>
+        <div class="card">javascript</div>
+        <!-- <div class="card">Java</div> -->
+        <!-- <div class="card">React</div> -->
+    </div>
+
+
+    <%-include('foot') -%>
